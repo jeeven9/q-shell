@@ -1,0 +1,32 @@
+.prompt {
+  color: #f8f9fa;
+  outline: none;
+}
+  
+.cursor {
+  animation: 1s blink step-end infinite;
+}
+  
+@keyframes blink {
+  from,
+  to {
+    color: transparent;
+  }
+  50% {
+    color: #f8f9fa;
+  }
+}
+
+.loading {
+  display:inline-block;
+  font-family: monospace;
+  font-size: 18px;
+  clip-path: inset(0 3ch 0 0);
+  animation: l 1s steps(4) infinite;
+}
+
+@keyframes l {
+  to {
+    clip-path: inset(0 -1ch 0 0)
+  }
+}
